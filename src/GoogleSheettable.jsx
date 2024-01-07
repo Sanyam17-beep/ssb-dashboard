@@ -26,7 +26,7 @@ const GoogleSheetTable = () => {
     fetchData();
     const intervalId = setInterval(() => {
       fetchData(); // Fetch data every 10 seconds
-    }, 10000);
+    }, 5000);
 
     return () => {
       clearInterval(intervalId); // Cleanup the interval when the component is unmounted
