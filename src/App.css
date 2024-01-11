@@ -18,22 +18,32 @@ z-index: 999;
 left: 10px;
 position: relative;
  }
- .Navbar>.search-box{
-    right: 10px;
-    position: absolute;
- }
+.table-container{
+  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 600px) {
+   .table-container{
+    overflow-x: scroll;
+    justify-content: flex-start;
+    width: 100vw;
+   }
+  }
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
- 
+ gap: 20px;
   }
   
   table {
-    width: 95%;
+   width: 95%;
     border-collapse: collapse;
-    margin-top: 10px;
+    
   }
   
   th, td {

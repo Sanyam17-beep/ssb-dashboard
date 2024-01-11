@@ -56,7 +56,8 @@ const GoogleSheetTable = () => {
 
   return (
     <div className="container">
-      <div className="Navbar"><img src={svglogo} alt="" width={120} />  <div className="search-box">
+      <div className="Navbar"><img src={svglogo} alt="" width={80} /> </div>
+      <div className="search-box">
         <label>
           
           <input
@@ -66,8 +67,8 @@ const GoogleSheetTable = () => {
             className="search"
           />
         </label>
-      </div></div>
-    
+      </div>
+      <div className="table-container">
       <table {...getTableProps()} style={{ marginTop: '10px' }}>
         <thead>
           {headerGroups.map((headerGroup) => (
@@ -96,6 +97,7 @@ const GoogleSheetTable = () => {
           })}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };
