@@ -5,8 +5,8 @@ import svglogo from "./Primarygreen.svg"
 const GoogleSheetTable = () => {
   const [sheetData, setSheetData] = useState([]);
   const [data, setData] = useState([]);
-  const sheetId = '1ycRF0FzOub85paiJEvQJKpYSG0RJ1_Et06tRHjoGnEs';
-  const apiKey = 'AIzaSyCU1RTPeMzsrxKTJ9vD6hxxMgJtY17vxjQ'; // Replace with your Google Sheets API key
+  const sheetId = '1JHJt7pzdAfLzg7xH_hFakwFyN0QrcTSCudije3BrHes';
+  const apiKey = 'AIzaSyDQYIFZOIadIDP5iXOBETpaIR0FrOYY5Bs'; // Replace with your Google Sheets API key
   const sheetName = 'Sheet1'; // Replace with your sheet name
 
   useEffect(() => {
